@@ -69,11 +69,11 @@ function StudyMode({ deck, updateStatus }) {
     updateStatus(card.id, status);
 
     if (status === "new") {
-      setMessage(" Marked as Hard");
+      setMessage(" Marked as New");
     } else if (status === "learning") {
       setMessage(" Marked as Learning");
     } else if (status === "mastered") {
-      setMessage(" Marked as Easy");
+      setMessage(" Marked as Mastered");
     }
 
     // auto clear message after 2s
